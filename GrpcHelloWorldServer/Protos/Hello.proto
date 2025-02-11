@@ -1,3 +1,17 @@
 syntax = "proto3";
 
 option csharp_namespace = "GrpcHelloWorldServer.Protos";
+
+package helloworld;
+
+service HelloService{
+	rpc SayHello(HelloRequest) returns (HellosResponse);
+}
+
+message HelloRequest{
+	string name=1;
+}
+
+message HellosResponse{
+	string message=1;
+}
