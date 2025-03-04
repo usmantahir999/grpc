@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorldServer", "Grp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorldClient", "GrpcHelloWorldClient\GrpcHelloWorldClient.csproj", "{E75C3083-7912-4086-A369-8359D075E1C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeter", "GrpcGreeter\GrpcGreeter.csproj", "{901D86DF-1C41-41B2-AE98-AD6833E1902E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{E75C3083-7912-4086-A369-8359D075E1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E75C3083-7912-4086-A369-8359D075E1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E75C3083-7912-4086-A369-8359D075E1C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{901D86DF-1C41-41B2-AE98-AD6833E1902E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{901D86DF-1C41-41B2-AE98-AD6833E1902E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{901D86DF-1C41-41B2-AE98-AD6833E1902E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{901D86DF-1C41-41B2-AE98-AD6833E1902E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
