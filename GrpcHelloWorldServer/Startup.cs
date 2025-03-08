@@ -18,6 +18,7 @@ namespace GrpcHelloWorldServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+            services.AddGrpcReflection();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,6 +34,11 @@ namespace GrpcHelloWorldServer
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<HelloWorldService>();
+                if (env.IsDevelopment()) {
+                    //command: grpcurl localhost:5001 describe
+                    //grpcurl -d "{ \"name\": \"World\" }" localhost:5001 helloworld.HelloService/SayHello
+                    endpoints.MapGrpcReflectionService();
+                }
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");

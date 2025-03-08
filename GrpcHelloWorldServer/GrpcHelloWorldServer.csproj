@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.33.1" />
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.56.0" />
   </ItemGroup>
 
 	<ItemGroup>
